@@ -1,7 +1,7 @@
 # Capstone1
 
-The repository contains 12 files :
-- [lood.csv](https://github.com/ailiita/Capstone1/blob/main/flood.csv) : raw data, with missing values. Used for data preparation.
+The repository contains the following files :
+- [flood.csv](https://github.com/ailiita/Capstone1/blob/main/flood.csv) : raw data, with missing values. Used for data preparation.
 - [flood_cleaned.csv](https://github.com/ailiita/Capstone1/blob/main/flood_cleaned.csv) : cleaned data after data preparation, feature engineering. Used to train final model.
 - [notebook.ipynb](https://github.com/ailiita/Capstone1/blob/main/notebook.ipynb) : Whole process : EDA, feature importance analysis Model selection process and parameter tuning
 - [train.py](https://github.com/ailiita/Capstone1/blob/main/train.py) : Script that trains final model and saves it

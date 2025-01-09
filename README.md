@@ -38,7 +38,11 @@ The dataset used for this analysis comprises numerous features, each representin
 - **FloodProbability**: The overall probability of flooding in the region. This is the **target variable** for predictive analysis. This is the target Variable.
 
 ## Context and Objective
-Flooding has become an increasingly significant risk in many regions, exacerbated by the impacts of climate change. It causes significant damage, both in terms of human lives and infrastructure, and their effects can persist for months before affected regions can recover, as seen in Spain last fall. Rising sea levels, drought, more intense and unpredictable monsoons, and changes in weather patterns have heightened the frequency and severity of floods. As a result, predicting flood risk is crucial for mitigating damage, preparing communities, and adapting to the changing climate. This project aims to leverage environmental and societal data to forecast flood probabilities and help guide effective risk management strategies.
+Flooding has become an increasingly significant risk in many regions, exacerbated by the impacts of climate change. It causes significant damage, both in terms of human lives and infrastructure, and their effects can persist for months before affected regions can recover, as seen in Spain last fall. Rising sea levels, drought, more intense and unpredictable monsoons, and changes in weather patterns have heightened the frequency and severity of floods. As a result, predicting flood risk is crucial for mitigating damage, preparing communities, and adapting to the changing climate. This project aims to leverage environmental and societal data to forecast flood probabilities and help guide effective risk management strategies.  
+After predicting the probability ***p***, predictions are classified into three risk classes :
+- Low risk (p<0.2)
+- Moderate (0.2<p<0.5)
+- High (0.5<p<1)
 
 ## Model Selection and Parameter Tuning
 I used three models to address this problem :

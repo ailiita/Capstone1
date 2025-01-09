@@ -13,7 +13,7 @@ The repository contains the following files :
 - [Dockerfile](https://github.com/ailiita/Capstone1/blob/main/Dockerfile)
 
 ## Data Description
-The dataset used for this analysis can be downloaded [here](https://www.kaggle.com/datasets/naiyakhalid/flood-prediction-dataset). It comprises numerous features, each representing a distinct parameter that influences flood occurrence and severity. These parameters include environmental factors such as monsoon intensity, river management, and topography drainage, as well as human-related factors like encroachments and societal vulnerability. Each row in the dataset corresponds to a specific region, with the columns providing scores for each parameter in that region. These scores quantify the level or impact of each parameter in the respective region, offering a comprehensive view of the contributing factors to flood risk. No further info about the regions, or countries were given.
+The dataset used for this analysis can be downloaded [here](https://www.kaggle.com/datasets/naiyakhalid/flood-prediction-dataset). It contains features that can influence flood occurrence and severity. Among these features, environmental factors, as well as human-related factors. Each row corresponds to a specific region, with the columns providing scores for each parameter in that region. These scores quantify the level or impact of each parameter in the respective region to flood risk. No further info about the regions, or countries were given.
 
 - MonsoonIntensity: Higher volumes of rain during monsoons increase the probability of floods.
 - TopographyDrainage: The drainage capacity based on the region's topography. Efficient drainage can help drain rainwater and reduce the risk of floods.

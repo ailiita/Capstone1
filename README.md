@@ -6,7 +6,7 @@ The repository contains the following files :
 - [notebook.ipynb](https://github.com/ailiita/Capstone1/blob/main/notebook.ipynb) : Whole process : EDA, feature importance analysis Model selection process and parameter tuning
 - [train.py](https://github.com/ailiita/Capstone1/blob/main/train.py) : Script that trains final model and saves it
 - [predict.py](https://github.com/ailiita/Capstone1/blob/main/predict.py) : Script that loads model and serves it via flask
-- [prediction_test.py](https://github.com/ailiita/Capstone1/blob/main/prediction_test.py) and [prediction_test.ipynb](https://github.com/ailiita/Midterm_project/blob/main/prediction_test.ipynb) : Script and notebook. Using input data, tests the model and gives the result of AQI prediction.
+- [prediction_test.py](https://github.com/ailiita/Capstone1/blob/main/prediction_test.py) and [prediction_test.ipynb](https://github.com/ailiita/Capstone1/blob/main/prediction_test.ipynb) : Script and notebook. Using input data, tests the model and gives the result of AQI prediction.
 - model_lr.bin
 - [Pipfile](https://github.com/ailiita/Capstone1/blob/main/Pipfile)
 - [Pipfile.lock](https://github.com/ailiita/Capstone1/blob/main/Pipfile.lock)

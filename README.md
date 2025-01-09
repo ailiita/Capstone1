@@ -48,8 +48,16 @@ I used three models to address this problem :
 
 The model was trained using 60% of the dataset and 20% was used for validation. Linear Regression and XGBoost have shown almost identical performances.
 
-## Training the final model 
-Model used for final training is Linear Regression.  
+## Installing Dependencies
+To create and activate the local environment, change directory to root folder of this project and run : 
+```
+pip install pipenv
+pipenv install
+pipenv shell
+```
+
+## Training the Final Model 
+Model used for final training is Linear Regression. Model is saved to ***model_lr.bin*** file.   
 The ***train.py*** file trains this model (80% for training, 20% for testing), it also performs cross-validation using 5 folds. Results :   
 
 ```
@@ -58,20 +66,26 @@ Cross-validation results :
 Training final model    
  Validation RMSE : 0.0074
 ```
-## Web service
-The model is deployed using flask.
-To create and activate the local environment, run : 
-```
-pip install pipenv
-pipenv install
-pipenv shell
-``` 
-To run the model locally execute:
+
+
+## Running the Web Service and Predicting
+A Flask web service is provided with an exposed endpoint (/predict). Requests containing the relevant features of a respondent (JSON format) can be sent to generate corresponding flood predictions.  
+In project directory, run with following command :
 ```
 pipenv run waitress-serve --listen=0.0.0.0:8686 predict:app
 ``` 
-In another shell, execute : 
+Using an example, a request can be made by running in project directory,: 
 ```
 python prediction_test.py
 ```
 The ***prediction_test.py*** provides the results of a test using some data as input. ***prediction_test.ipynb*** is the notebook that displays the result. 
+
+## Containerization
+***Dockerfile***; ***Pipfile***, ***Pifile.lock*** are provided.
+To build and start the service's Docker container, follow these instructions :
+- Download Docker Desktop
+- In project directory, run :
+```
+docker build -t flood-prediction .
+docker run -it --rm -p 8686:8686 flood-prediction
+```
